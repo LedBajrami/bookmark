@@ -1,0 +1,422 @@
+
+
+/*---------------------- navbar ------------------------*/
+
+header {
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: black;
+}
+
+
+.navbar-links {
+  width: 100%;
+  display: none;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+
+.navbar-links li {
+  list-style: none;
+  font-size: 1em;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  display: block;
+}
+
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+
+/*---------------------- navbar ------------------------*/
+
+
+
+
+
+
+/*---------------------- collapsible table ------------------------*/
+
+.main-collapsible {
+  background-color: white;
+  color: black;
+  width: 90%;
+  margin-inline: auto;
+  margin-block: 120px 40px;
+}
+
+
+.container-collapsible {
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+hr {
+  background-color: white;
+  width: 90%;
+  display: block;
+  margin-inline: auto;
+}
+
+
+
+.collapsible-button {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 5px;
+  border: none;
+}
+
+
+
+
+
+.button-name-collapsible {
+  color: black;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+}
+
+.button-name-collapsible:hover {
+  color: orangered;
+}
+
+
+
+.collapsible-button:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  font-size: 24px;
+}
+
+.collapsible-button:hover::after{
+  color: orangered;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  color: black;
+}
+
+/*---------------------- collapsible table ------------------------*/
+
+
+
+/*------------------ main page ----------------*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
+.text {
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.text p {
+  margin-block: 20px;
+  color: rgb(100, 100, 100);
+}
+
+.text h1 {
+  color: rgb(51, 51, 71);
+}
+
+
+input {
+  height: 30px;
+  border-radius: 7px;
+  border: none;
+}
+
+.button2-desktop {
+  display: none;
+}
+
+.button1 {
+  padding: 10px 15px;
+  border-radius: 7px;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: 1px solid hsl(231, 69%, 60%);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.button2-mobile {
+  padding: 8px 55px;
+  border-radius: 7px;
+  background-color: hsl(0, 94%, 66%);
+  color: white;
+  border: 1px solid hsl(0, 94%, 66%);
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.container {
+  width: 93%;
+  margin: 0 auto;
+}
+
+
+img:not(.logo) {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin-inline: auto;
+}
+
+header {
+  background-color: #fff;
+}
+ 
+
+
+header .logo {
+  width: 20%;
+}
+
+section {
+  margin-top: 60px;
+}
+
+.section3 img {
+  max-width: 160px;
+  margin-block: 80px 35px;
+}
+
+.section3 button {
+  padding: 14px 30px;
+}
+
+
+/*.section3-box:nth-of-type(2) {
+  margin-top: 130px;
+}
+
+.section3-box:nth-of-type(3) {
+  margin-top: 240px;
+} */
+
+.section3 p {
+  margin-block: 15px;
+}
+
+.section2 .text {
+  margin-bottom: 70px;
+}
+
+
+
+.section5 {
+  background-color: hsl(231, 69%, 60%);
+  color: #fff;
+  padding-block: 30px;
+}
+
+.section5 h1 {
+  margin-block: 17px;
+  letter-spacing: 1.5px;
+}
+
+.section5 p {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+footer .logo {
+  width: 30%;
+  background-color: white;
+}
+
+footer {
+  background-color:  hsl(229, 31%, 21%);
+  color: white;
+  padding-block: 20px;
+}
+
+footer li {
+  list-style: none;
+  font-size: 14px;
+  margin-block: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.socials {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+}
+
+
+.button1:hover {
+  background-color: white;
+  border: 1px solid hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+  cursor: pointer;
+}
+
+.button2:hover {
+  background-color: white;
+  border: 1px solid hsl(0, 94%, 66%);
+  color: hsl(0, 94%, 66%);
+  cursor: pointer;
+}
+
+.navbar-links li a:hover,
+.socials:hover,
+footer a:hover {
+  color: hsl(0, 94%, 66%);
+}
+
+
+
+
+
+
+
+@media(min-width: 600px) {
+
+
+  .toggle-button {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-links  {
+    display: flex;
+    width: 40%;
+  }
+
+  .navbar-links ul {
+    flex-direction: row;
+    justify-content: right;
+  }
+
+
+  .button2-mobile {
+    display: none;
+  }
+
+  .button2-desktop {
+    padding: 8px 20px;
+    border-radius: 7px;
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    border: 1px solid hsl(0, 94%, 66%);
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 7px;
+}
+  
+
+}
+
+
+@media (min-width: 900px) {
+  .container {
+    width: 90%;
+  }  
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .section1 img {
+    order: 2;
+  }
+
+
+  .socials {
+    margin: 0;
+  }
+
+  .footer li {
+    padding-inline: 15px;
+  }
+}
